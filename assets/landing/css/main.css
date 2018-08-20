@@ -1,0 +1,343 @@
+/* Created 19 Mei 2018          */
+
+/* Facebook.com/satya.wibawa    */
+
+/* Adapted from : https://colorlib.com/preview/theme/appy/*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800');
+/* Default Theme */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #8790af;
+}
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Navbar */
+
+#mainNav {
+    border-color: rgba(34, 34, 34, 0.05);
+    background-color: rgb(72, 44, 191);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    font-weight: 200;
+}
+
+#mainNav .navbar-brand {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 12px;
+    padding: 8px 20px;
+    color: #222222;
+}
+
+#mainNav .navbar-nav>li>a {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+#mainNav a.btn {
+    margin: 10px !important;
+}
+
+#mainNav .navbar-nav>li>a.active {
+    color: rgba(106, 198, 240, 1);
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav>li>a.active:hover {
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav>li>a,
+#mainNav .navbar-nav>li>a:focus {
+    color: #fff;
+}
+
+#mainNav .navbar-nav>li>a:hover,
+#mainNav .navbar-nav>li>a:focus:hover {
+    color: rgba(106, 198, 240, 1);
+}
+
+@media (min-width: 992px) {
+    #mainNav {
+        width: 100%;
+        border-color: transparent;
+        background-color: transparent;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #mainNav .navbar-brand {
+        color: white;
+    }
+    #mainNav .navbar-brand:hover,
+    #mainNav .navbar-brand:focus {
+        color: yellow;
+    }
+    #mainNav .navbar-nav>li>a,
+    #mainNav .navbar-nav>li>a:focus {
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-bottom: 2px solid transparent;
+    }
+    #mainNav .navbar-nav>li>a.active,
+    #mainNav .navbar-nav>li>a:hover,
+    #mainNav .navbar-nav>li>a:focus:hover {
+        color: white;
+        border-bottom-color: #ffffff;
+    }
+    #mainNav.navbar-shrink {
+        background: rgb(72, 44, 191);
+        background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+        background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+        background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    }
+}
+
+/* Header */
+
+header#home{
+    padding-top: 25vh;
+    padding-bottom: 100px;
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    background: url('../images/master/bg.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header#home h1 {
+    font-size: 60px;
+    color: #dbe02b;
+}
+
+@media (max-width: 768px) {
+    header#home h1 {
+        font-size: 45px;
+    }
+}
+@media (min-width: 992px) {
+    header#home {
+        height: 100vh;
+    }
+}
+
+/* Section Intro */
+
+section#intro {
+    padding: 50px;
+}
+
+section#intro .title {
+    color: #5e88fc;
+    text-align: center;
+}
+
+section#intro .subtitle {
+    text-align: center;
+}
+
+section#intro .content {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    section#intro .content {
+        padding-top: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Section Features */
+
+section#features {
+    padding-top: 100px;
+    color: #ffffff;
+    background-color: #5e88fc;
+    background-image: url('../images/features/feature-bg.png');
+    /* background-position: bottom -125px center; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 94%;
+}
+
+section#features .title {
+    color: #dbe02b;
+}
+
+section#features .mobile-image {
+    margin-bottom: -142px;
+}
+
+/* Section Download */
+
+section#download {
+    color: #fff;
+    background: url('../images/download.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section#download h2 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+section#download .badges .badge-link {
+    display: block;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section#download .badges .badge-link:last-child {
+    margin-bottom: 0;
+}
+
+section#download .badges .badge-link img {
+    height: 60px;
+}
+
+@media (min-width: 768px) {
+    section#download .badges .badge-link {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    section#download h2 {
+        font-size: 70px;
+    }
+}
+
+/* Section howto */
+
+section#howto {
+    background: rgb(72, 44, 191);
+    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    color: #fff;
+    padding: 50px 30px 50px 30px;
+}
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background-repeat: repeat-x;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
+footer h5 {
+    color: #ff9a00
+}
+
+footer p {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+footer .icons a {
+    color: #ccc; 
+    text-decoration: none !important;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer .icons a:hover {
+    color: #fff;
+}
+
+footer ul {
+    margin-bottom: 0;
+}
+
+footer ul li a {
+    font-size: 12px;
+    color: #fff;
+}
+
+footer ul li a:hover,
+footer ul li a:focus,
+footer ul li a:active,
+footer ul li a.active {
+    text-decoration: none;
+}
+
+header#news{
+    width: 100%;
+    padding-top:15vh;
+    padding-bottom:10vh;
+    min-height: 50vh;
+    color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header#news h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 30px;
+}
+header#news h6{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header#news h1 {
+        font-size: 40px;
+    }
+}
+
+section#content{
+    min-height: 100vh;
+    color: #222222;
+}
